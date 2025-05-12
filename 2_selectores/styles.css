@@ -1,0 +1,60 @@
+/*Selectores descendientes*/
+.mainTitle{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#globalNav .mainTitle{
+    color:rgb(16, 89, 157);
+}
+
+.contenedor .mainTitle{
+    color:red
+}
+
+footer h2{
+    color:green
+}
+/*Selectores hijos*/
+footer > p{
+    background-color: rgb(245, 166, 226);
+}
+footer > p > span{
+    color:rgb(9, 255, 0);
+}
+/*Selectores de hermandad*/
+/*Hermanos Subsiguientes*/
+footer h2 ~ p{
+    color:rgb(255, 0, 0);
+    text-decoration: underline;
+}
+/*Hermanos Adyacentes*/
+.developer{
+    font-family: Courier, monospace;
+    font-size: 20px;
+}
+.developer + p{
+    background-color: lightskyblue;
+}
+.contenedor > form > button{
+    color:white;
+    background-color: blue;
+} 
+/*Selectores de atributo simple*/
+input[type]{
+    border-bottom: rgb(255, 0, 0) 2px dotted;
+    border-top: 4px solid blue;
+}
+/*Selectores de atributo con valor*/
+.contenedor input[type="password"]{
+    border-left: crimson 2px dashed;
+    border-right: rgb(0, 70, 4) 2px dashed;
+}
+/*Selectores de atributos */
+/*Enlances con dominio .org*/
+a[href$="org"]{
+    color:rgb(69, 69, 69)
+}
+a[href^="aprendices"]{
+    color:rgb(248, 136, 154)
+}
